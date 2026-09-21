@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f2eb;
+    color: #302b27;
+}
+
+/* HEADER */
+
+header {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.9);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #403932;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #a96f4f;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #eee0d1, #f9f5ef);
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.small-title {
+    color: #a87557;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 65px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 27px;
+    background: #493c34;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.house {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: #e7cdb8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 190px;
+    box-shadow: 0 30px 60px rgba(80,50,30,0.15);
+}
+
+
+/* GENERAL */
+
+.section {
+    padding: 90px 8%;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 45px;
+}
+
+
+/* ROOMS */
+
+.rooms {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.room {
+    background: white;
+    padding: 30px;
+    min-height: 190px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.room:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.room span {
+    font-size: 35px;
+}
+
+.room h3 {
+    margin: 18px 0 8px;
+}
+
+.room p {
+    color: #8d8178;
+    margin-bottom: 12px;
+}
+
+.room strong {
+    color: #a66e4e;
+}
+
+
+/* HOUSE PLAN */
+
+.plan-section {
+    padding: 100px 8%;
+    background: #302a26;
+    color: white;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.plan-section p {
+    line-height: 1.7;
+    color: #d7cbc1;
+}
+
+.floor-plan {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-rows: 120px 120px 120px;
+    gap: 8px;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.living {
+    grid-row: span 2;
+    background: #846c59;
+}
+
+.kitchen {
+    background: #a88970;
+}
+
+.master {
+    background: #705b4c;
+}
+
+.bedroom {
+    background: #967a65;
+}
+
+.study {
+    background: #5e5149;
+}
+
+.game {
+    background: #9b806a;
+}
+
+.bath {
+    background: #76675e;
+}
+
+.garden {
+    background: #62705c;
+}
+
+
+/* ENERGY */
+
+.energy {
+    text-align: center;
+}
+
+.energy-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.energy-box div {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.energy-box span {
+    font-size: 40px;
+}
+
+.energy-box h3 {
+    margin: 15px 0;
+}
+
+.energy-box p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #a66e4e;
+}
+
+.formula {
+    margin-top: 30px;
+    color: #8d8178;
+}
+
+
+/* BILL */
+
+.bill {
+    background: #eee2d6;
+}
+
+.bill-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.bill-card div {
+    padding: 40px;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+
+.bill-card p {
+    color: #8d8178;
+    margin-bottom: 15px;
+}
+
+.bill-card h3 {
+    font-size: 25px;
+    color: #a66e4e;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background: #302a26;
+    color: white;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #c8bbb1;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .house {
+        width: 280px;
+        height: 280px;
+        font-size: 120px;
+    }
+
+    .rooms {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plan-section {
+        grid-template-columns: 1fr;
+    }
+
+    .energy-box,
+    .bill-card {
+        grid-template-columns: 1fr;
+    }
+}
